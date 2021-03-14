@@ -1,0 +1,28 @@
+/home/ec2-user/.rvm/rubies/ruby-2.6.6/bin/ruby -I/home/ec2-user/.rvm/gems/ruby-2.6.6/gems/rspec-core-3.7.1/lib:/home/ec2-user/.rvm/gems/ruby-2.6.6/gems/rspec-support-3.7.1/lib /home/ec2-user/.rvm/gems/ruby-2.6.6/gems/rspec-core-3.7.1/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+MoviesController
+  searches movies with same director
+    finds movies with same director
+    finds only this movie
+    has no director information
+    should render two movies
+    preexisting method test in before(:each)
+      should call find model method
+      should render page correctoy
+      should create movie and redirect
+
+MoviesHelper
+  helper methods
+    should return odd
+  helper methods
+    should return even
+
+Movie
+  returns similar movies
+
+2 deprecation warnings total
+
+Finished in 0.09301 seconds (files took 1.62 seconds to load)
+10 examples, 0 failures
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 52 / 56 LOC (92.86%) covered.

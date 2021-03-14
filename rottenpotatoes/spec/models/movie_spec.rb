@@ -11,11 +11,11 @@ require 'database_cleaner'
 
 RSpec.describe Movie, type: :model do
     it "returns similar movies" do
-        movie_1 = Movie.create(title: 'movie_1', director: 'director1')
-        movie_2 = Movie.create(title: 'movie_2', director: 'director1')
-        movie_3 = Movie.create(title: 'movie_3', director: 'director2')
-        expect(movie_1.movies_by_same_director('director1')) == [movie_1, movie_2]
-        expect(movie_1.movies_by_same_director('director1')) != [movie_1, movie_2, movie_3]
+        movie_1 = Movie.create(title: 'movie_11', director: 'director11')
+        movie_2 = Movie.create(title: 'movie_22', director: 'director11')
+        movie_3 = Movie.create(title: 'movie_33', director: 'director22')
+        expect(movie_1.movies_by_same_director('director11')) == [movie_1, movie_2]
+        expect(movie_1.movies_by_same_director('director11')) != [movie_1, movie_2, movie_3]
     end
 
 end 
